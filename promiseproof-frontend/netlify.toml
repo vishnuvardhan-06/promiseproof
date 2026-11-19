@@ -10,7 +10,7 @@
 # The browser still sees ONE website, so login cookies keep working.
 [[redirects]]
   from = "/api/*"
-  to = "https://https://promiseproof-api.onrender.com/api/:splat"
+  to = "https://promiseproof-api.onrender.com/api/:splat"
   status = 200
   force = true
 
