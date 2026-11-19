@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  VITE_API_BASE_URL = "/api"
+  NODE_VERSION = "22"
+
+# Send API calls to the Render backend (replace the address below).
+# The browser still sees ONE website, so login cookies keep working.
+[[redirects]]
+  from = "/api/*"
+  to = "https://YOUR-BACKEND-NAME.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+# Let React Router handle page refreshes like /dashboard
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

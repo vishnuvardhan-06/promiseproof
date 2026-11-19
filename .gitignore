@@ -1,0 +1,15 @@
+.env
+**/.env
+!**/.env.example
+evidence-storage/
+node_modules/
+**/node_modules/
+target/
+**/target/
+dist/
+**/dist/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

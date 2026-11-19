@@ -1,0 +1,286 @@
+.party-page {
+    max-width: 1200px;
+    width: 88%;
+    margin: 0 auto;
+    padding: 50px 0 70px;
+}
+
+.party-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.party-eyebrow {
+    color: #2455b5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.party-heading h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.party-heading p:last-child {
+    color: #68758b;
+    font-size: 14px;
+}
+
+.party-total {
+    background: white;
+    border: 1px solid #e8edf4;
+    padding: 18px 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.party-total strong {
+    font-size: 27px;
+    color: #1746a2;
+}
+
+.party-total span {
+    color: #68758b;
+    font-size: 12px;
+}
+
+.party-layout {
+    display: grid;
+    grid-template-columns: 0.85fr 1.4fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.party-form,
+.party-records {
+    background: white;
+    padding: 25px;
+    border: 1px solid #e8edf4;
+    border-radius: 14px;
+}
+
+.party-form h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.party-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.party-field label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.party-field input,
+.party-field textarea {
+    padding: 12px;
+    border: 1px solid #dce3ee;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.party-field input:focus,
+.party-field textarea:focus {
+    border-color: #2455b5;
+    box-shadow: 0 0 0 3px rgba(36, 85, 181, 0.1);
+}
+
+.party-field textarea {
+    resize: vertical;
+}
+
+.party-form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.party-form-actions button,
+.party-card-actions button {
+    border: none;
+    padding: 11px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.party-form-actions button:first-child {
+    background: #1746a2;
+    color: white;
+}
+
+.party-cancel {
+    background: #e9edf5;
+    color: #26364d;
+}
+
+.party-search {
+    margin-bottom: 20px;
+}
+
+.party-search input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce3ee;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.party-search input:focus {
+    border-color: #2455b5;
+}
+
+.party-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.party-card {
+    display: flex;
+    gap: 16px;
+    padding: 18px;
+    border: 1px solid #e8edf4;
+    border-radius: 11px;
+}
+
+.party-avatar {
+    min-width: 48px;
+    height: 48px;
+    background: #e9effc;
+    color: #1746a2;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    font-weight: 800;
+}
+
+.party-card-content {
+    min-width: 0;
+    flex: 1;
+}
+
+.party-card-content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.party-abbreviation {
+    display: inline-block;
+    background: #edf2fb;
+    color: #1746a2;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.party-card-content p {
+    color: #68758b;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.party-card-content small {
+    display: block;
+    color: #758198;
+    margin-bottom: 8px;
+}
+
+.party-card-content a {
+    display: inline-block;
+    color: #2455b5;
+    font-size: 12px;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.party-card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.party-card-actions button:first-child {
+    background: #e9effc;
+    color: #1746a2;
+}
+
+.party-card-actions button:last-child {
+    background: #fff0f0;
+    color: #b32626;
+}
+
+.party-empty {
+    text-align: center;
+    padding: 40px 15px;
+    color: #68758b;
+}
+
+.party-empty h3 {
+    color: #26364d;
+    margin-bottom: 10px;
+}
+
+.party-error,
+.party-success {
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.party-error {
+    color: #a32626;
+    background: #fff0f0;
+}
+
+.party-success {
+    color: #17633c;
+    background: #e6f6ed;
+}
+
+@media (max-width: 850px) {
+
+    .party-layout {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .party-page {
+        width: 92%;
+    }
+
+    .party-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .party-form,
+    .party-records {
+        padding: 18px;
+    }
+
+    .party-card {
+        padding: 13px;
+    }
+
+}
