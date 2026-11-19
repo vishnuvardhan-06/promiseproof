@@ -2,7 +2,8 @@
 // Local development falls back to the Spring Boot port. Production builds can
 // point this at a same-origin reverse proxy such as "/api".
 export const API_BASE = (
-    import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api"
+    import.meta.env.VITE_API_BASE_URL ||
+        (import.meta.env.PROD ? "/api" : "http://localhost:8080/api")
 ).replace(/\/+$/, "");
 
 const CSRF_HEADER = "X-XSRF-TOKEN";
